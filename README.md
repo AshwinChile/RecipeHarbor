@@ -56,9 +56,9 @@ but it could also be a separate collection with a reference to the recipe.
 3. Repository Layer: This layer is responsible for interacting with the database and performing the CRUD operations.
 
 **Other Considerations:**
-1. Apart from these layers, there are also DTO's, Exception and Config classes handling classes.
+1. Apart from these layers, there are also DTO's, Exception and Config handling classes.
 2. Logging has been implemented using SLF4J and default configuration is INFO level.
 3. The application is also integrated with Swagger for API documentation.
 4. The application is also integrated with Lombok to reduce boilerplate code.
-5. The application is also integrated with Junit and Mockito for unit and integration testing.
+5. The application is also integrated with Junit, Mockito and Hamcrest for unit and integration testing.
 6. The integration tests use mongo test containers to spin up a temporary mongo database for testing purposes and are hence completely isolated from the local database.
