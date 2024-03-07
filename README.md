@@ -25,4 +25,30 @@ This application provides a set of REST API's to store, retrieve, update, fetch 
 8. A postman collection is also available in the project root directory with the name "RecipeHarbor.postman_collection.json". 
    You can import this collection in your postman and start testing the API's. 
 9. Some seed data gets added to the local database on application start, this should help with testing the API's.
-10. 
+
+# Architecture:
+
+This application can be built in both relational or non-relational databases.
+For this project, I have used MongoDB as the database. The application is built using Spring Boot and Java 17.
+
+The reason for choosing a NoSql database was primarily because of full text search capabilities of Mongo and that was one of the requirements of the task.
+Additionally, Mongo gives the flexibility to store complex data structures.
+The application uses the Spring Data MongoDB library to interact with the database.
+
+The real data-modeling decision can only be made after understanding the exact data and use case requirements.
+Here I have used a simplistic data model to store the recipes and their ingredients and choose to store the ingredients as a list of strings, 
+but it could also be a separate collection with a reference to the recipe.
+
+
+**The application is divided into 3 layers:**
+1. Controller Layer: This layer is responsible for handling the incoming requests and sending the response back to the client.
+2. Service Layer: This layer is responsible for handling the business logic and calling the repository layer to perform the CRUD operations.
+3. Repository Layer: This layer is responsible for interacting with the database and performing the CRUD operations.
+
+**Other Considerations:**
+1. Apart from these layers, there are also DTO's, Exception and Config classes handling classes.
+2. Logging has been implemented using SLF4J and default configuration is INFO level.
+3. The application is also integrated with Swagger for API documentation.
+4. The application is also integrated with Lombok to reduce boilerplate code.
+5. The application is also integrated with Junit and Mockito for unit and integration testing.
+6. The integration tests use mongo test containers to spin up a temporary mongo database for testing purposes and are hence completely isolated from the local database.
