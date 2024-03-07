@@ -1,0 +1,27 @@
+spring:
+  sql:
+    init:
+      mode: always
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  application:
+    name: "recipeharbor"
+  profiles:
+    active:
+      - "prod"
+  data:
+    mongodb:
+      database: recipes
+      uri: mongodb://localhost:27017/recipes
+      auto-index-creation: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com:
+      recipeharbor: INFO
+

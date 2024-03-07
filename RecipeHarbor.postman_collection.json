@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "88a59cc9-e5d6-429c-afeb-d571dbc21d40",
+		"name": "RecipeHarbor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22459144"
+	},
+	"item": [
+		{
+			"name": "Create Recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Lamb masala\",\n    \"vegetarian\": false,\n    \"servings\": 10,\n    \"ingredients\": [\"Ground lamb\", \"Taco shells\", \"Lettuce\", \"Cheese\"],\n    \"instructions\": [\n      { \"step_number\": 1, \"description\": \"Cook ground lamb until browned\" },\n      { \"step_number\": 2, \"description\": \"Serve with salsa and guacamole\" }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/recipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recipe Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vegetarian\": true,\n  \"servings\": 4,\n  \"includeIngredients\": [\"Tomatoes\", \"Onions\"],\n  \"instructionsText\": \"Grill\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/search?page=0&size=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Recipe",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My Awesome Recipe1\",\n    \"isVeg\": true,\n    \"servings\": 10,\n    \"ingredients\": [\n        \"Potatoes\",\"Onions\", \"Tomato\"\n    ],\n    \"instructions\": [\n        {\n            \"step_number\": 1,\n            \"description\": \"Take this and do that\"\n        },\n        {\n            \"step_number\": 2,\n            \"description\": \"Take that and do this\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"65ea093187312725cf4f744d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"65ea093187312725cf4f744d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My Awesome Recipe\",\n    \"isVeg\": false,\n    \"servings\": 2,\n    \"instructions\": [\n        {\n            \"step_number\": 1,\n            \"description\": \"Take this and do that\"\n        },\n        {\n            \"step_number\": 2,\n            \"description\": \"Take that and do this\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"65ea093187312725cf4f744e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
