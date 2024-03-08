@@ -31,7 +31,7 @@ This application provides a set of REST API's to store, retrieve, update, fetch 
 
      _**mvn verify**_
 
-7. To access the API' documentation, open the below URL in your browser:
+7. To access the API documentation, open the below URL in your browser:
 
      _**http://localhost:8080/swagger-ui.html**_
 
