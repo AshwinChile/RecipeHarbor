@@ -1,6 +1,6 @@
 # Recipe Harbor
 
-This application provides a set of REST API's to store, retrieve, update, fetch and filter recipes.
+This application provides a set of REST API's to store, retrieve, update, fetch and filter recipes. This has been implemented using Springboot with Java 17.
 
 **Pre-requisites:**
 1. Java 17
