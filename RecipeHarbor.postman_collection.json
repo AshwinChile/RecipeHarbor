@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Lamb masala\",\n    \"vegetarian\": false,\n    \"servings\": 10,\n    \"ingredients\": [\"Ground lamb\", \"Taco shells\", \"Lettuce\", \"Cheese\"],\n    \"instructions\": [\n      { \"step_number\": 1, \"description\": \"Cook ground lamb until browned\" },\n      { \"step_number\": 2, \"description\": \"Serve with salsa and guacamole\" }\n    ]\n  }",
+					"raw": "{\n    \"name\": \"Lamb masala\",\n    \"vegetarian\": false,\n    \"servings\": 10,\n    \"ingredients\": [\n      {\"name\": \"Ground lamb\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Taco shells\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Lettuce\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Cheese\", \"quantity\": 1, \"unit\": \"unit\"}\n    ],\n    \"instructions\": [\n      { \"step_number\": 1, \"description\": \"Cook ground lamb until browned\" },\n      { \"step_number\": 2, \"description\": \"Serve with salsa and guacamole\" }\n    ]\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,7 +42,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"vegetarian\": true,\n  \"servings\": 4,\n  \"includeIngredients\": [\"Tomatoes\", \"Onions\"],\n  \"instructionsText\": \"Grill\"\n}\n",
+					"raw": "{\n  \"servings\": 2,\n  \"includeIngredients\": [\"Potatoes\",\"Carrots\"],\n  \"instructionsText\": \"Take this and do\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,7 +82,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"My Awesome Recipe1\",\n    \"isVeg\": true,\n    \"servings\": 10,\n    \"ingredients\": [\n        \"Potatoes\",\"Onions\", \"Tomato\"\n    ],\n    \"instructions\": [\n        {\n            \"step_number\": 1,\n            \"description\": \"Take this and do that\"\n        },\n        {\n            \"step_number\": 2,\n            \"description\": \"Take that and do this\"\n        }\n    ]\n}",
+					"raw": "{\n    \"name\": \"My Awesome Recipe1\",\n    \"isVeg\": true,\n    \"servings\": 10,\n    \"ingredients\": [\n      {\"name\": \"Potatoes\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Onions\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Carrots\", \"quantity\": 1, \"unit\": \"unit\"},\n      {\"name\": \"Mango\", \"quantity\": 1, \"unit\": \"unit\"}\n    ],\n    \"instructions\": [\n        {\n            \"step_number\": 1,\n            \"description\": \"Take this and do that\"\n        },\n        {\n            \"step_number\": 2,\n            \"description\": \"Take that and do this\"\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -90,7 +90,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744d",
+					"raw": "http://localhost:8080/api/recipe/65eac4cd6635b85fc7817d37",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -99,7 +99,7 @@
 					"path": [
 						"api",
 						"recipe",
-						"65ea093187312725cf4f744d"
+						"65eac4cd6635b85fc7817d37"
 					]
 				}
 			},
@@ -120,7 +120,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744d",
+					"raw": "http://localhost:8080/api/recipe/65eaca4c7d03b908754f2081",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -129,7 +129,7 @@
 					"path": [
 						"api",
 						"recipe",
-						"65ea093187312725cf4f744d"
+						"65eaca4c7d03b908754f2081"
 					]
 				}
 			},
@@ -153,7 +153,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/recipe/65ea093187312725cf4f744e",
+					"raw": "http://localhost:8080/api/recipe/65eac4cd6635b85fc7817d41",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -162,7 +162,7 @@
 					"path": [
 						"api",
 						"recipe",
-						"65ea093187312725cf4f744e"
+						"65eac4cd6635b85fc7817d41"
 					]
 				}
 			},
