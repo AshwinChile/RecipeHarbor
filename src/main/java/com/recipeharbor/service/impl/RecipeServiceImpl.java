@@ -104,10 +104,10 @@ public class RecipeServiceImpl implements IRecipeService {
             criteria.and("servings").is(searchCriteriaDto.getServings());
         }
         if(searchCriteriaDto.getIncludeIngredients()!=null){
-            criteria.and("ingredients").all(searchCriteriaDto.getIncludeIngredients());
+            criteria.and("ingredients").elemMatch(Criteria.where("name").in(searchCriteriaDto.getIncludeIngredients()));
         }
-        if(searchCriteriaDto.getExcludeIngredients()!=null){
-            criteria.and("ingredients").not().all(searchCriteriaDto.getExcludeIngredients());
+        if(searchCriteriaDto.getExcludeIngredients()!=null) {
+            criteria.and("ingredients").not().elemMatch(Criteria.where("name").in(searchCriteriaDto.getExcludeIngredients()));
         }
         if(searchCriteriaDto.getInstructionsText()!=null){
             String regex = searchCriteriaDto.getInstructionsText(); // Ensure full-text search

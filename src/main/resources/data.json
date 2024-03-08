@@ -1,26 +1,25 @@
 [
   {
-  "name": "My Awesome Recipe",
-  "vegetarian": false,
-  "servings": 1,
-  "ingredients": [
-    "Potatoes"
-  ],
-  "instructions": [
-    {
-      "step_number": 1,
-      "description": "Take this and do that and you have an amazing piece of food"
-    }
-  ]
-},
+    "name": "My Awesome Recipe",
+    "vegetarian": false,
+    "servings": 1,
+    "ingredients": [
+      {"name": "Potatoes", "quantity": 1, "unit": "unit"}
+    ],
+    "instructions": [
+      {
+        "step_number": 1,
+        "description": "Take this and do that and you have an amazing piece of food"
+      }
+    ]
+  },
   {
-
     "name": "My fav Recipe",
     "vegetarian": true,
     "servings": 2,
     "ingredients": [
-      "Potatoes",
-      "Onions"
+      {"name": "Potatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Onions", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -46,547 +45,18 @@
     ]
   },
   {
-
     "name": "My fav Recipe",
     "vegetarian": false,
     "servings": 2,
     "ingredients": [
-      "Potatoes",
-      "Onions",
-      "Tomatoes"
+      {"name": "Potatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Onions", "quantity": 1, "unit": "unit"},
+      {"name": "Tomatoes", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
         "step_number": 1,
         "description": "Take this and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
-      },
-      {
-        "step_number": 2,
-        "description": "Take this and do that and you have an asdasd piece of food"
-      },
-      {
-        "step_number": 3,
-        "description": "Take this and do that and you asdas an amazing piece of food"
-      },
-      {
-        "step_number": 4,
-        "description": "Take this and do asdasd and you have an amazing piece of food"
-      },
-      {
-        "step_number": 5,
-        "description": "Take asdasd and do that and you have an amazing piece of food"
       },
       {
         "step_number": 2,
@@ -643,10 +113,10 @@
     "vegetarian": false,
     "servings": 2,
     "ingredients": [
-      "Potatoes",
-      "Onions",
-      "Carrots",
-      "Mango"
+      {"name": "Potatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Onions", "quantity": 1, "unit": "unit"},
+      {"name": "Carrots", "quantity": 1, "unit": "unit"},
+      {"name": "Mango", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -664,9 +134,9 @@
     "vegetarian": false,
     "servings": 4,
     "ingredients": [
-      "Pasta",
-      "Tomatoes",
-      "Spinach"
+      {"name": "Pasta", "quantity": 1, "unit": "unit"},
+      {"name": "Tomatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Spinach", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -688,9 +158,9 @@
     "vegetarian": false,
     "servings": 3,
     "ingredients": [
-      "Chicken",
-      "Broccoli",
-      "Bell Peppers"
+      {"name": "Chicken", "quantity": 1, "unit": "unit"},
+      {"name": "Broccoli", "quantity": 1, "unit": "unit"},
+      {"name": "Bell Peppers", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -712,10 +182,10 @@
     "vegetarian": false,
     "servings": 6,
     "ingredients": [
-      "Carrots",
-      "Potatoes",
-      "Onions",
-      "Celery"
+      {"name": "Carrots", "quantity": 1, "unit": "unit"},
+      {"name": "Potatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Onions", "quantity": 1, "unit": "unit"},
+      {"name": "Celery", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -737,9 +207,9 @@
     "vegetarian": false,
     "servings": 2,
     "ingredients": [
-      "Salmon fillets",
-      "Lemon",
-      "Garlic"
+      {"name": "Salmon fillets", "quantity": 1, "unit": "unit"},
+      {"name": "Lemon", "quantity": 1, "unit": "unit"},
+      {"name": "Garlic", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -757,10 +227,10 @@
     "vegetarian": false,
     "servings": 4,
     "ingredients": [
-      "Dough",
-      "Tomatoes",
-      "Mushrooms",
-      "Bell Peppers"
+      {"name": "Dough", "quantity": 1, "unit": "unit"},
+      {"name": "Tomatoes", "quantity": 1, "unit": "unit"},
+      {"name": "Mushrooms", "quantity": 1, "unit": "unit"},
+      {"name": "Bell Peppers", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -782,10 +252,10 @@
     "vegetarian": false,
     "servings": 6,
     "ingredients": [
-      "Ground beef",
-      "Taco shells",
-      "Lettuce",
-      "Cheese"
+      {"name": "Ground beef", "quantity": 1, "unit": "unit"},
+      {"name": "Taco shells", "quantity": 1, "unit": "unit"},
+      {"name": "Lettuce", "quantity": 1, "unit": "unit"},
+      {"name": "Cheese", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -807,10 +277,10 @@
     "vegetarian": false,
     "servings": 10,
     "ingredients": [
-      "Ground lamb",
-      "Taco shells",
-      "Lettuce",
-      "Cheese"
+      {"name": "Ground lamb", "quantity": 1, "unit": "unit"},
+      {"name": "Taco shells", "quantity": 1, "unit": "unit"},
+      {"name": "Lettuce", "quantity": 1, "unit": "unit"},
+      {"name": "Cheese", "quantity": 1, "unit": "unit"}
     ],
     "instructions": [
       {
@@ -822,4 +292,5 @@
         "description": "Serve with salsa and guacamole"
       }
     ]
-  }]
+  }
+]

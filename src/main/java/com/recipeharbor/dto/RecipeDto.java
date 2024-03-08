@@ -46,11 +46,11 @@ public class RecipeDto {
     private Integer servings;
 
     @Schema(
-            description = "The Ingredients of the dish", example = "Tomatoes, Onions"
+            description = "The Ingredients of the dish", example = "{\"name\": \"Potatoes\", \"quantity\": 1, \"unit\": \"unit\"}"
     )
     @NotEmpty(message = "Ingredients of the recipe are required")
     @Size(min = 1, message = "At least one ingredient is required")
-    private List<String> ingredients;
+    private List<Ingredient> ingredients;
 
     @Schema(
             description = "Instructions on how to use this recipe", example = "Boil the pasta, add the pesto sauce and mix well. Serve hot."

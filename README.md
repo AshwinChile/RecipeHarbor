@@ -35,6 +35,9 @@ This application provides a set of REST API's to store, retrieve, update, fetch 
 8. A postman collection is also available in the project root directory with the name "**RecipeHarbor.postman_collection.json**". 
    You can import this collection in your postman and start testing the API's. 
 9. Some seed data gets added to the local database on application start, this should help with testing the API's.
+10. Please note the search API can use all the filters (But can only use one of includeIngredients or excludeIngredients at a time with others).
+11. Last but not the least, the search API functionality of including ingredients works in the following fashion:
+(Eg: On searching for 2 ingredients, the recipe should contain both the ingredients, the search will display all recipes containing them individually and combined.)
 
 # Architecture:
 
@@ -46,9 +49,7 @@ Additionally, Mongo gives the flexibility to store complex data structures.
 The application uses the Spring Data MongoDB library to interact with the database.
 
 The real data-modeling decision can only be made after understanding the exact data and use case requirements.
-Here I have used a simplistic data model to store the recipes and their ingredients and choose to store the ingredients as a list of strings, 
-but it could also be a separate collection with a reference to the recipe.
-
+Here I have used a simplistic data model to store the recipes and their ingredients. This could be a lot more complex based on the requirements.
 
 **The application is divided into 3 layers:**
 1. Controller Layer: This layer is responsible for handling the incoming requests and sending the response back to the client.

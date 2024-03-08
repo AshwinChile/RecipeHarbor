@@ -1,6 +1,7 @@
 package com.recipeharbor.service.impl;
 
 import com.mongodb.client.result.DeleteResult;
+import com.recipeharbor.controller.RecipeDtoTestDataBuilder;
 import com.recipeharbor.dto.RecipeDto;
 import com.recipeharbor.dto.SearchCriteriaDto;
 import com.recipeharbor.entity.Recipe;
@@ -45,24 +46,16 @@ class RecipeServiceTest {
     @BeforeEach
     void setUp() {
 
-        recipeDto = RecipeDto.builder()
-                .name("Orange and Tomato Juice")
-                .ingredients(List.of("Oranges", "Tomatoes"))
-                .isVeg(true)
-                .servings(4)
-                .instructions(List.of(Steps.builder()
-                                .step_number(1)
-                                .description("Peel the oranges and tomatoes")
-                                .build(),
-                        Steps.builder()
-                                .step_number(2)
-                                .description("Cut the oranges and tomatoes into small pieces")
-                                .build(),
-                        Steps.builder()
-                                .step_number(3)
-                                .description("Blend the oranges and tomatoes")
-                                .build()))
-                .build();
+        recipeDto = recipeDto = RecipeDtoTestDataBuilder
+                .buildRecipeDto(null,
+                        "Orange and Tomato Juice",
+                        2,
+                        List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "cups"),
+                                RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups")),
+                        List.of(RecipeDtoTestDataBuilder.buildInstructions(1, "Peel the oranges and tomatoes"),
+                                RecipeDtoTestDataBuilder.buildInstructions(2, "Cut the oranges and tomatoes into small pieces"),
+                                RecipeDtoTestDataBuilder.buildInstructions(2, "Blend the oranges and tomatoes")),
+                        true);
 
         recipe = Recipe.builder()
                 .id(recipeDto.getId() != null ? recipeDto.getId() : null)
@@ -207,7 +200,9 @@ class RecipeServiceTest {
                 .id("75e841e36ad9c545baf4c9e")
                 .name("Another recipe of oranges")
                 .vegetarian(true)
-                .ingredients(List.of("Oranges", "Tomatoes", "Mangoes"))
+                .ingredients(List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Mangoes", 2, "cups")))
                 .instructions(List.of(Steps.builder()
                                 .step_number(1)
                                 .description("Peel the oranges and tomatoes")
@@ -266,7 +261,9 @@ class RecipeServiceTest {
                 .id("75e841e36ad9c545baf4c9e")
                 .name("Another recipe of oranges")
                 .vegetarian(true)
-                .ingredients(List.of("Oranges", "Tomatoes", "Mangoes"))
+                .ingredients(List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Mangoes", 2, "cups")))
                 .instructions(List.of(Steps.builder()
                                 .step_number(1)
                                 .description("Peel the oranges and tomatoes")
@@ -322,7 +319,9 @@ class RecipeServiceTest {
                 .id("75e841e36ad9c545baf4c9e")
                 .name("Another recipe of oranges")
                 .vegetarian(true)
-                .ingredients(List.of("Oranges", "Tomatoes", "Mangoes"))
+                .ingredients(List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups"),
+                        RecipeDtoTestDataBuilder.buildIngredient("Mangoes", 2, "cups")))
                 .instructions(List.of(Steps.builder()
                                 .step_number(1)
                                 .description("Peel the oranges and tomatoes")

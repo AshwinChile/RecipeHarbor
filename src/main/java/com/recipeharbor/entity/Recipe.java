@@ -1,5 +1,6 @@
 package com.recipeharbor.entity;
 
+import com.recipeharbor.dto.Ingredient;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -26,7 +27,7 @@ public class Recipe extends BaseEntity {
     @Indexed
     private Integer servings;
     @ElementCollection
-    private List<String> ingredients;
+    private List<Ingredient> ingredients;
     @ElementCollection
     private List<Steps> instructions;
 

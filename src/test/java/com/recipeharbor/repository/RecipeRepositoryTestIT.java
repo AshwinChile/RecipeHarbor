@@ -3,6 +3,7 @@ package com.recipeharbor.repository;
 import com.recipeharbor.config.AbstractContainerBaseTest;
 import com.recipeharbor.config.MongoConfig;
 import com.recipeharbor.config.MongoTestConfig;
+import com.recipeharbor.controller.RecipeDtoTestDataBuilder;
 import com.recipeharbor.dto.RecipeDto;
 import com.recipeharbor.entity.Recipe;
 import com.recipeharbor.entity.Steps;
@@ -45,25 +46,16 @@ class RecipeRepositoryTestIT extends AbstractContainerBaseTest {
     void setUp() {
 
         recipeRepository.deleteAll();
-
-        recipeDto = RecipeDto.builder()
-                .name("Orange and Tomato Juice")
-                .ingredients(List.of("Oranges", "Tomatoes"))
-                .isVeg(true)
-                .servings(4)
-                .instructions(List.of(Steps.builder()
-                                .step_number(1)
-                                .description("Peel the oranges and tomatoes")
-                                .build(),
-                        Steps.builder()
-                                .step_number(2)
-                                .description("Cut the oranges and tomatoes into small pieces")
-                                .build(),
-                        Steps.builder()
-                                .step_number(3)
-                                .description("Blend the oranges and tomatoes")
-                                .build()))
-                .build();
+        recipeDto = RecipeDtoTestDataBuilder
+                .buildRecipeDto(null,
+                        "Recipe 4",
+                        2,
+                        List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "units"),
+                                RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups")),
+                        List.of(RecipeDtoTestDataBuilder.buildInstructions(1, "Peel the oranges and tomatoes"),
+                                RecipeDtoTestDataBuilder.buildInstructions(2, "Cut the oranges and tomatoes into small pieces"),
+                                RecipeDtoTestDataBuilder.buildInstructions(3, "Blend the oranges and tomatoes")),
+                        true);
 
         recipe = Recipe.builder()
                 .id(recipeDto.getId() != null ? recipeDto.getId() : null)
@@ -110,7 +102,9 @@ class RecipeRepositoryTestIT extends AbstractContainerBaseTest {
         Recipe saved = recipeRepository.save(recipe);
         log.info("Recipe with id {} created", saved);
         saved.setServings(10);
-        saved.setIngredients(List.of("Oranges", "Tomatoes", "Mint"));
+        saved.setIngredients(List.of(RecipeDtoTestDataBuilder.buildIngredient("Oranges", 2, "units"),
+                RecipeDtoTestDataBuilder.buildIngredient("Tomatoes", 3, "cups"),
+                RecipeDtoTestDataBuilder.buildIngredient("Mint", 4, "grams")));
 
         Recipe updatedRecipe = recipeRepository.save(saved);
         assertThat(updatedRecipe.getId()).isEqualTo(saved.getId());
