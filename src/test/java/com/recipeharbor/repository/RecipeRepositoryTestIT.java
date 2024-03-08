@@ -6,7 +6,6 @@ import com.recipeharbor.config.MongoTestConfig;
 import com.recipeharbor.controller.RecipeDtoTestDataBuilder;
 import com.recipeharbor.dto.RecipeDto;
 import com.recipeharbor.entity.Recipe;
-import com.recipeharbor.entity.Steps;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
