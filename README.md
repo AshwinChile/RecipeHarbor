@@ -12,6 +12,9 @@ This application provides a set of REST API's to store, retrieve, update, fetch 
 **Steps to run the application:**
 1. Ensure docker is running on your machine.
 2. Clone the repository to your local machine and open the project in your IDE.
+
+   **git@github.com:AshwinChile/RecipeHarbor.git**
+
 3. Run the below command to start the mongodb database container:
 
    _**docker run -d -p 27017:27017 --name mongodb_container mongo:latest**_
